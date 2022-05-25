@@ -10,12 +10,13 @@
     <script type="module">
 
         import {apiList} from "./js/modulo-api.js"
-    
+        import {CONTENT_TYPE} from "./js/config.js"
 
         
         console.log("Inizio esecuzione");
         apiList("tafanos", "");
         apiList("tafanos", "series");
+        apiList("Avengers", CONTENT_TYPE.SERIES);
         console.log("Fine esecuzione");
         /*
         import {URL} from "./js/modulo-api.js";
