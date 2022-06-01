@@ -1,0 +1,53 @@
+    /*********BODY BACKGROUND*****/
+    #body_bg{
+        background-color: rgb(79, 232, 56);
+     }
+    
+    /*****NAVBAR******/
+     .nav-link{
+        color: #000 ;
+    }
+    .nav-link:hover{
+        color: rgb(122, 250, 38)
+    }
+   /******BACKGROUND DELLA NAVBAR******/
+    .bg-info{
+        background-color: rgba(161, 205, 205, 0.792) !important;
+    }
+    /*****BORDO DEL BOTTONE DELLA NAVBAR*****/
+    .btn-outline-dark{
+        border-color: rgba(255, 6, 48, 0);
+    }
+    /*****LOCANDINA ORIZZONTALE IN PRIMO PIANO*****/
+   #primo_piano{
+    padding-left: 10px;
+    padding-top: 10px; 
+    padding-right: 10px;
+   }
+   /******FILM E SERIE IN VETRINA*****/
+   #film_vetrina{
+       padding-left: 10px;
+       border-radius: 15% !important;
+   }
+   #film_vetrina:hover{
+    transform: scale(0.5);
+    transition: all 0.6s;
+    opacity: 20%;
+   }
+
+   /*********SCRITTA DI FILM E SERIE PIU VISTI*************/
+   #title{
+       text-transform: uppercase;
+       text-align-last:center;
+
+   }
+   /***LINEA CHE SERAPRE I TITOLETTI SOPRA****/
+   #line{
+       size: 300px;
+       color: #000;
+   }
+
+  
+
+
+   
