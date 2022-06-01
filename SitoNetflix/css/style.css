@@ -18,11 +18,23 @@
     .btn-outline-dark{
         border-color: rgba(255, 6, 48, 0);
     }
-    /*****LOCANDINA ORIZZONTALE IN PRIMO PIANO*****/
+    /*****LOCANDINE IN PRIMO PIANO*****/
    #primo_piano{
-    padding-left: 10px;
-    padding-top: 10px; 
-    padding-right: 10px;
+       
+   }
+   /**FRECCINE SUL CAROSELLO**/
+   #freccina{
+       background-color: rgb(0, 0, 0) !important;
+       lighting-color: black;
+       opacity: 20%; 
+       border-radius: 10%;
+       
+   }
+   #freccina:hover{
+       background-color: rgb(0, 255, 34);
+       transform: scale(1.5);
+       transition: all 0.5s;
+
    }
    /******FILM E SERIE IN VETRINA*****/
    #film_vetrina{
@@ -39,13 +51,13 @@
    #title{
        text-transform: uppercase;
        text-align-last:center;
-
    }
    /***LINEA CHE SERAPRE I TITOLETTI SOPRA****/
    #line{
        size: 300px;
-       color: #000;
-   }
+       color: #000; 
+    
+    }
 
   
 

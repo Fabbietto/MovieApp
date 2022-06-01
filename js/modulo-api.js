@@ -39,7 +39,7 @@ export const apiList = (s, type) => {
         viewItems(items);
     });
 };
-
+/*
 const viewItems = (items) =>{
     items.map((item)=> {
         console.group(item.Title);
@@ -49,6 +49,27 @@ const viewItems = (items) =>{
         console.groupEnd();
     });
 };
+*/
+const viewItems = (items) =>{
+    //posiziono dove voglio l'elenco dei movies
+    const element = document.getElementById("movies");
 
+    items.map((item)=> {
+        //creo il movie all'interno della DOM
+
+        element.appendChild(crateHTMLMovie(item));
+    } );
+};
+const crateHTMLMovie = (movie) => {
+    //creo il tag p vuoto
+    const para = document.createElement("p");
+    //creo un testo con il titolo del nome del film
+    const node = document.createTextNode(movie.Title);
+    //inserisco dentro il tag p il testo
+    para.appendChild(node);
+
+
+    return para;
+};
 
 
