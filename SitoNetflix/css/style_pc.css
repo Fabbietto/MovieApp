@@ -38,8 +38,6 @@
 
    }
    /******FILM E SERIE IN VETRINA*****/
-
-
    #film_vetrina{
        padding-left: auto;
        padding-right: auto;
@@ -47,7 +45,6 @@
        width: 80%;
        border-radius: 15% !important;
    }
-   
    #film_vetrina:hover{
     transform: scale(0.5);
     transition: all 0.6s;

@@ -1,11 +1,11 @@
 
 
 //s mi fa una ricerca su tutto il database
-GET https://omdbapi.com/?apikey=fb7170de&s=tafanos&type=movie HTTP/1.1
+GET https://omdbapi.com/?apikey=fb7170de&s=harry&type=movie HTTP/1.1
 ###
 
 //t mi trova il film che si chiama solo dopo =
-GET https://omdbapi.com/?apikey=fb7170de&t=tafanos HTTP/1.1
+GET https://omdbapi.com/?apikey=fb7170de&s=pirates HTTP/1.1
 ###
 
 //i mi trova il film secondo l'ID
