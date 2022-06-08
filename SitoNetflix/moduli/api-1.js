@@ -1,15 +1,22 @@
 import { BASE_URL } from "./configurazion.js";
 
-export const apiList = (t, type) => {
-  const url = BASE_URL + `t=${t}&type=${type}`;
+
+export const apiListAS = async (t, type) => {
+  
   // fetch = permette di fare chiamate e restituisce promise
-  fetch(url)
-    .then((response) => response.json())
-    .then((results) => {
-      const items = results;
-      viewItems(items);
-    });
-};
+  const url = BASE_URL + `t=${t}&type=${type}`;
+  try{
+    
+    const response = await fetch(url);
+    const results = await response.json();
+    await viewItems(results);
+    }catch(error){
+      console.log(error.massage);
+    } finally{
+      console.log("finally");
+    }
+}
+
 
 const viewItems = (items) => {
   
@@ -41,7 +48,7 @@ const crateHTMLMovie = (movie) => {
     element.replaceChild (titolo, titolo_old);
     element.replaceChild (para, para_old);
 
-    /*++++++++++++++++++++++++++++++++++++++ seconda card ++++++++++++++++++++++++++++++++++++++*/
+    /*+++++++++++++++++++++++++ seconda card ++++++++++++++++++++++++++++++++++++++*/
     
     const element2 = document.getElementById("card-titolo-2");
     
@@ -63,7 +70,7 @@ const crateHTMLMovie = (movie) => {
 
     element2.replaceChild (titolo_2, titolo_old_2);
     element2.replaceChild (para_2, para_old_2);
-    
+  
 };
 
 
