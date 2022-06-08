@@ -97,6 +97,8 @@ const crateHTMLMovie = (movie) => {
     element.replaceChild(h5, titolo_vecchio);
     element.replaceChild(para, desc_vecchia);
     img_vecchia.src = `${movie.Poster}`;
+    const imgg =  document.createTextNode(movie.Poster);
+    document.getElementById("card-img-1").src = imgg;
     
 }
 

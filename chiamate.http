@@ -1,7 +1,7 @@
 
 
 //s mi fa una ricerca su tutto il database
-GET https://omdbapi.com/?apikey=fb7170de&s=harry&type=movie HTTP/1.1
+GET https://omdbapi.com/?apikey=fb7170de&s=ice_age&type=movie HTTP/1.1
 ###
 
 //t mi trova il film che si chiama solo dopo =

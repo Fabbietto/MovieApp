@@ -1,7 +1,8 @@
     /*********BODY BACKGROUND*****/
     #body_bg{
-        background-color: rgb(79, 232, 56);
-     }
+        background-color: rgb(245, 41, 0);
+        
+     } 
     
     /*****NAVBAR******/
     .nav-link{
@@ -38,8 +39,6 @@
 
    }
    /******FILM E SERIE IN VETRINA*****/
-
-
    #film_vetrina{
        padding-left: auto;
        padding-right: auto;
@@ -47,7 +46,6 @@
        width: 80%;
        border-radius: 15% !important;
    }
-   
    #film_vetrina:hover{
     transform: scale(0.5);
     transition: all 0.6s;
@@ -66,7 +64,6 @@
     
     }
 
-    /*********** CARD DEI FILM/SERIE *****/
     .card:hover{
         transform: translateY(-10px);
         transition: all 0.8s;

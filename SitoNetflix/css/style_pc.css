@@ -1,6 +1,6 @@
     /*********BODY BACKGROUND*****/
     #body_bg{
-        background-color: rgb(79, 232, 56);
+        background-color: rgb(167, 232, 56);
      }
     
     /*****NAVBAR******/
@@ -61,6 +61,11 @@
        size: 300px;
        color: #000; 
     
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+        transition: all 0.8s;
     }
 
   
