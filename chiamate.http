@@ -5,12 +5,16 @@ GET https://omdbapi.com/?apikey=fb7170de&s=ice_age&type=movie HTTP/1.1
 ###
 
 //t mi trova il film che si chiama solo dopo =
-GET https://omdbapi.com/?apikey=fb7170de&s=pirates HTTP/1.1
+GET https://omdbapi.com/?apikey=fb7170de&s=caribbean HTTP/1.1
 ###
 
 //i mi trova il film secondo l'ID
-GET https://omdbapi.com/?apikey=fb7170de&i=tt6409922 HTTP/1.1
+GET https://omdbapi.com/?apikey=fb7170de&i=tt1790809 HTTP/1.1
 ###
 
 // SOLAMENTE CON s SI POSSONO UTILIZZARE I SEGUENTI TAG
 //type -> mi divide per categoria i movie/serie/game
+
+
+GET https://omdbapi.com/?apikey=fb7170de&t=pirates HTTP/1.1
+

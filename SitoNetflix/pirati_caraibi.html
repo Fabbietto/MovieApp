@@ -99,7 +99,7 @@
       <div class="container">
         <div class="row row-cols-2">
           <div class="col">
-            <!-- mx auto è qualcosa di figo -->
+            <!-- mx auto mi sposta il margine di dx e sx in automatico rispetto al resto -->
           <div class="card mx-auto" style="width: 18rem; justify-content: center;">
             <img src="./img/img_locandine/pirati_caraibi_4.jpg" class="card-img-top" alt="sium" id="card-img-1">
             <div class="card-body" id="card-titolo-1">
@@ -142,7 +142,8 @@
         import { apiList } from "./moduli/api-1.js"
         import { CONTENT_TYPE } from "./moduli/configurazion.js"
 
-        apiList("Pirates",""); </script>
+        apiList("pirates_of_the_caribbean", CONTENT_TYPE.MOVIE );
+        </script>
 </body>
 
 </html>
