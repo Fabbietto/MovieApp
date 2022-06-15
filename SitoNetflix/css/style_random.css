@@ -7,6 +7,7 @@
 
 }
 
+
 .contenitore
 {
     display: flex;
@@ -34,10 +35,43 @@
 .bottonee:hover{
     background-color: deeppink;
     color: aqua ;
-    cursor:crosshair;
+    cursor:pointer;
     transform: scale(1.1);
     transition: all 0.5s;
 }
+
+
+
+.card{
+    background-color: yellow;
+    border-color: black;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card{
+    display: none;
+}
+
+
+
+h5{
+    background-color: aqua;
+    color: black;
+    text-transform: uppercase;
+}
+
+#logo{
+    width: 100px;
+}
+
+#RICARICA{
+    display: none;
+}
+
 
 
 

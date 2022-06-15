@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANDOM PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style_random.css">
 </head>
 <body>
-    <div class="contenitore" >
-        <div class="bottone"  id="randomico">
-            <a href="https://www.youtube.com/watch?v=7r_4C8-CuGo" target="_blank"><button class="bottonee">RANDOM BUTTON</button></a>
+
+
+<div class="contenitore">
+    <div> 
+    <nav class="navbar" style="justify-content: center;">
+        <a href="home.html"><img src="./img/logo_si.png" alt="" id="logo"></a>
+    </nav>
+
+
+    
+        <h3 id="RICARICA">Ricaricare la pagina se non trova nulla</h3>
+        <div class="bottone" id="randomico">
+            <button class="bottonee" onclick=filmRandom() id="botton">DOPPIO CLICK</button>
+            <div class="card" id="randomCard">
+
+                <img src="" class="card-img-top" alt="N/A" id="card-img">
+
+                <div class="card-body" style="background-color: cyan;" id="cardsium">
+                    <h5 class="card-title" style="background-color: rgba(255, 0, 0, 0.267);" id="film-titolo-1"></h5>
+                    <p class="card-text" id="desc-film-1"></p>
+                    <a href="#" class="btn btn-primary" style="background-color: rgb(77, 169, 58);">GUARDA ORA</a>
+                </div>
+
+
+            </div>
         </div>
     </div>
+
+</div>
+    <script>
+
+        function filmRandom() {
+            const btn = document.getElementById("botton");
+            btn.addEventListener("click", function (movie) {
+
+                document.getElementById("randomCard").style.display = "contents";
+                document.getElementById("RICARICA").style.display = "contents";
+                document.getElementById("botton",).style.display = "none";
+                
+            
+            });
+        }
+    </script>
+
+    <script type="module">
+
+        import { apiListAS } from "./moduli/random-api.js"
+        import { CONTENT_TYPE } from "./moduli/configurazion.js"
+        
+
+        
+        
+    //  const idfilm = Math.floor((Math.random() * 10) );
+      const array = [
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      Math.floor((Math.random() * 10) ),
+      ]
+      
+      const x = array.join("");
+      /*stampo l'id per verifiche con chiamate*/
+      console.log("tt"+ x);
+    
+     const prova =  apiListAS(`tt${x}` , "");
+     
+    
+    </script>
+
 </body>
+
 </html>

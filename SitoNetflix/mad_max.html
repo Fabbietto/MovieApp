@@ -39,7 +39,7 @@
         <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="#serie">Series</a></button>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="#random">Random</a></button>
+        <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="./random.html">Random</a></button>
       </li>
       <li class="nav-item dropdown">
         <button type="button" class="btn btn-outline-dark"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
@@ -60,72 +60,55 @@
 
   <div class="films">
     <hr size="30" color="black">
-    <h1 id="title"><strong>Saga FILM : fast and furios </strong></h1>
+    <h1 id="title"><strong>Saga FILM : mad max </strong></h1>
     <hr size="30" color="black">
     <div class="container">
-      <div class="row row-cols-3">
+      <div class="row row-cols-4">
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/pirati_caraibi_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
+            <img src="" class="card-img-top" alt="sium" id="card-img-1">
             <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+              <h5 class="card-title" id="film-titolo-1"></h5>
+              <p class="card-text" id="desc-film-1"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/pirati_caraibi_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-2">
+            <div class="card-body" id="card-titolo-2">
+              <h5 class="card-title" id="film-titolo-2"></h5>
+              <p class="card-text" id="desc-film-2"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
+      
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/pirati_caraibi_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-3">
+            <div class="card-body" id="card-titolo-3">
+              <h5 class="card-title" id="film-titolo-3"></h5>
+              <p class="card-text" id="desc-film-3"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      <div class="container">
-        <div class="row row-cols-2">
+     
+      
+    
           <div class="col">
-            <!-- mx auto è qualcosa di figo -->
           <div class="card mx-auto" style="width: 18rem; justify-content: center;">
-            <img src="./img/img_locandine/pirati_caraibi_4.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-4">
+            <div class="card-body" id="card-titolo-4">
+              <h5 class="card-title" id="film-titolo-4"></h5>
+              <p class="card-text" id="desc-film-4"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
-          <div class="row row-cols-2">
-            <div class="col">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="./img/img_locandine/pirati_caraibi_5.jpg" class="card-img-top" alt="sium" id="card-img-1">
-              <div class="card-body" id="card-titolo-1">
-                <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-                <p class="card-text" id="desc-film-1"> descrizione film </p>
-                <a href="" class="btn btn-success">Guarda ora</a>
-              </div>
-            </div>
-          </div>
-        
-          </div>
-
-        </div>
-      </div>
-
+  </div>
 
 
 
@@ -139,10 +122,10 @@
       
       </script>
       <script type="module">
-        import { apiList } from "./moduli/api-1.js"
+        import { apiListAS } from "./moduli/api-1.js"
         import { CONTENT_TYPE } from "./moduli/configurazion.js"
 
-        apiList("Fast",""); 
+        apiListAS("Mad Max",CONTENT_TYPE.MOVIE); 
         </script>
 </body>
 

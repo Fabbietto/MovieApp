@@ -39,14 +39,14 @@
         <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="#serie">Series</a></button>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="#random">Random</a></button>
+        <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="./random.html">Random</a></button>
       </li>
       <li class="nav-item dropdown">
         <button type="button" class="btn btn-outline-dark"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
             href="#" role="button" aria-expanded="false">Top maratone</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./pirati_caraibi.html">I Pirati dei Caraibi</a></li>
-            <li><a class="dropdown-item" href="./fast_e_furios.html">Fast & Furios</a></li>
+            <li><a class="dropdown-item" href="./mad_max.html">Mad Max</a></li>
             <li><a class="dropdown-item" href="./era_glaciale.html">L'Era Glaciale</a></li>
           </ul>
         </button>
@@ -62,34 +62,36 @@
     <hr size="30" color="black">
     <h1 id="title"><strong>Saga FILM : l'era glaciale </strong></h1>
     <hr size="30" color="black">
+
+
     <div class="container">
       <div class="row row-cols-3">
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/ice_age_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
+            <img src="" class="card-img-top" alt="sium" id="card-img-1">
             <div class="card-body" id="card-titolo-1">
               <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+              <p class="card-text" id="desc-film-1"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/pirati_caraibi_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-2">
+            <div class="card-body" id="card-titolo-2">
+              <h5 class="card-title" id="film-titolo-2">titolo film</h5>
+              <p class="card-text" id="desc-film-2"></p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./img/img_locandine/pirati_caraibi_1.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-3">
+            <div class="card-body" id="card-titolo-3">
+              <h5 class="card-title" id="film-titolo-3">titolo film</h5>
+              <p class="card-text" id="desc-film-3"> descrizione film </p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
@@ -101,10 +103,10 @@
           <div class="col">
             <!-- mx auto è qualcosa di figo -->
           <div class="card mx-auto" style="width: 18rem; justify-content: center;">
-            <img src="./img/img_locandine/pirati_caraibi_4.jpg" class="card-img-top" alt="sium" id="card-img-1">
-            <div class="card-body" id="card-titolo-1">
-              <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-              <p class="card-text" id="desc-film-1"> descrizione film </p>
+            <img src="" class="card-img-top" alt="sium" id="card-img-4">
+            <div class="card-body" id="card-titolo-4">
+              <h5 class="card-title" id="film-titolo-4">titolo film</h5>
+              <p class="card-text" id="desc-film-4"> descrizione film </p>
               <a href="" class="btn btn-success">Guarda ora</a>
             </div>
           </div>
@@ -112,10 +114,10 @@
           <div class="row row-cols-2">
             <div class="col">
             <div class="card mx-auto" style="width: 18rem;">
-              <img src="./img/img_locandine/pirati_caraibi_5.jpg" class="card-img-top" alt="sium" id="card-img-1">
-              <div class="card-body" id="card-titolo-1">
-                <h5 class="card-title" id="film-titolo-1">titolo film</h5>
-                <p class="card-text" id="desc-film-1"> descrizione film </p>
+              <img src="" class="card-img-top" alt="sium" id="card-img-5">
+              <div class="card-body" id="card-titolo-5">
+                <h5 class="card-title" id="film-titolo-5">titolo film</h5>
+                <p class="card-text" id="desc-film-5"> descrizione film </p>
                 <a href="" class="btn btn-success">Guarda ora</a>
               </div>
             </div>
@@ -139,10 +141,11 @@
       
       </script>
       <script type="module">
-        import { apiList } from "./moduli/api-1.js"
-        import { CONTENT_TYPE } from "./moduli/configurazion.js"
+      import { apiListAS } from "./moduli/api-1.js"
+      import { CONTENT_TYPE } from "./moduli/configurazion.js"
 
-        apiList("ice_age",""); </script>
+      apiListAS( "ice age", "");
+        </script>
 </body>
 
 </html>
